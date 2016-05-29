@@ -7,8 +7,8 @@ public class QuestionA {
 	public static int countPathsWithSum(TreeNode root, int targetSum) {
 		if (root == null) return 0;
 		
-		/* Count paths with sum starting from the root. */
-		int pathsFromRoot = countPathsWithSumFromNode(root, targetSum, 0);
+		/* Count paths with sum starting from the root. */		    // (BST)logn* how many node(times) calling it therfore  
+		int pathsFromRoot = countPathsWithSumFromNode(root, targetSum, 0); // Balnaced treeO(nlogn) unbalanced O(n*n)
 		
 		/* Try the nodes on the left and right. */
 		int pathsOnLeft = countPathsWithSum(root.left, targetSum);
