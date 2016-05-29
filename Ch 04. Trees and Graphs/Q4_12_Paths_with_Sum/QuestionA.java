@@ -1,7 +1,9 @@
 package Q4_12_Paths_with_Sum;
 
 import CtCILibrary.TreeNode;
-
+//HERE HERE HERE 
+ // (BST)logn* how many node(times) calling it therfore  
+// Balnaced treeO(nlogn) unbalanced O(n*n)
 public class QuestionA {
 	
 	public static int countPathsWithSum(TreeNode root, int targetSum) {
