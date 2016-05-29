@@ -47,6 +47,8 @@ public class TreeNode {
 		}
 		return null;
 	}
+	//       the probabilty of left    LeftSize*1/n       TOTAL PROBABILITY=1=!=100% = root(1)*1/n +LeftSize*1/n + RightSize*1/n
+	//       the probabilty of right    RightSize*1/n
 	
 	public TreeNode getRandomNode() {
 		int leftSize = left == null ? 0 : left.size();
@@ -61,14 +63,15 @@ public class TreeNode {
 		}
 	}
 	
-	public TreeNode getIthNode(int i) {
+/**	public TreeNode getIthNode(int i) {
 		int leftSize = left == null ? 0 : left.size();
 		if (i < leftSize) {
-			return left.getIthNode(i);
+			return left.getIthNode(i);                             Alternative works the same as the one above
+										O(logN) time for both
 		} else if (i == leftSize) {
 			return this;
 		} else {
 			return right.getIthNode(i - (leftSize + 1));
 		}
-	}
+	}**/
 } 
