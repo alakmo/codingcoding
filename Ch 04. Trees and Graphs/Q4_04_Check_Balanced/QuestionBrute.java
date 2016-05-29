@@ -1,5 +1,5 @@
 package Q4_04_Check_Balanced;
-
+//O(nlogn) time 
 import CtCILibrary.AssortedMethods;
 import CtCILibrary.TreeNode;
 
