@@ -2,7 +2,7 @@ package Q4_07_Build_Order.DFS;
 
 import java.util.ArrayList;
 import java.util.Stack;
-
+//O(p+d)  p= number of project  d= number of depandancy  Topological sort
 public class Question {
 
 	/* Build the graph, adding the edge (a, b) if b is dependent on a. 
