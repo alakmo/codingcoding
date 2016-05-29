@@ -1,6 +1,6 @@
 package Q4_04_Check_Balanced;
 import CtCILibrary.TreeNode;
-
+//O(n) time O(H) space
 public class QuestionImproved {
 		
 	public static int checkHeight(TreeNode root) {
