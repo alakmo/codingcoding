@@ -7,7 +7,7 @@ public class QuestionD {
 	 * https://en.wikipedia.org/wiki/Multiplication_algorithm#Peasant_or_binary_multiplication 
 	 */
 	public static int minProduct(int a, int b) {
-		if (a < b) return minProduct(b, a);
+		if (a < b) return minProduct(b, a);  // that's why it's logb    ,,, b = the bigger number
 		int value = 0;
 		while (a > 0) {
 			counter++;
