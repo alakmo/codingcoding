@@ -25,7 +25,12 @@ public class Question {
 		return binary.toString();
 	}
 	
-	public static String printBinary2(double num) {
+	
+	
+	
+	
+	
+/**	public static String printBinary2(double num) {
 		if (num >= 1 || num <= 0) {
 			return "ERROR";
 		}
@@ -34,7 +39,7 @@ public class Question {
 		double frac = 0.5;
 		binary.append(".");
 		while (num > 0) {
-			/* Setting a limit on length: 32 characters */
+			/// Setting a limit on length: 32 characters 
 			if (binary.length() >= 32) {
 				return "ERROR";
 			}
@@ -48,7 +53,7 @@ public class Question {
 		}
 		return binary.toString();
 	}	
-	
+**/	
 	public static void main(String[] args) {
 		String bs = printBinary(.125);
 		System.out.println(bs);
