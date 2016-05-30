@@ -1,5 +1,5 @@
 package Q10_03_Search_in_Rotated_Array;
-
+//O(N) if there is duplicate values    O(logN)  if there is NO dups
 public class Question {
 	
 	public static int search(int a[], int x) {
