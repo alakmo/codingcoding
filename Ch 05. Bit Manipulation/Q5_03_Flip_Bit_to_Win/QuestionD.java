@@ -18,7 +18,7 @@ public class QuestionD {
 				currentLength = 0;
 			}
 			maxLength = Math.max(previousLength + currentLength + 1, maxLength);
-			a >>>= 1;
+			a >>>= 1;//Logical Shift 00000 
 		}
 		return maxLength;
 	}
