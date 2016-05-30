@@ -2,7 +2,7 @@ package Q4_12_Paths_with_Sum;
 import java.util.HashMap;
 
 import CtCILibrary.TreeNode;
-
+// O(n) time becuse touch everynode once;;; space O(logn) when balance and O(n) when unbalanced
 public class QuestionB {
 	
 	public static int countPathsWithSum(TreeNode root, int targetSum) {
