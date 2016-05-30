@@ -3,7 +3,7 @@ package Q8_07_Permutations_Without_Dups;
 import java.util.*;
 
 public class QuestionC {
-
+// no overloading so the solution O(n!)
 	public static void getPerms(String prefix, String remainder, ArrayList<String> result) {
 		if (remainder.length() == 0) {
 			result.add(prefix);
