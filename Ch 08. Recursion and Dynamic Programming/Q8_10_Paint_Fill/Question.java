@@ -1,7 +1,7 @@
 package Q8_10_Paint_Fill;
 
 public class Question {
-
+//this solution is like doing BFS breadth first search
 	public enum Color {
 		Black, White, Red, Yellow, Green
 	}
