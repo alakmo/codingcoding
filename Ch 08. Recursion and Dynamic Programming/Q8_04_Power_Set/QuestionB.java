@@ -1,7 +1,7 @@
 package Q8_04_Power_Set;
 
 import java.util.*;
-
+//same as the other solution
 public class QuestionB {
 	
 	public static ArrayList<Integer> convertIntToSet(int x, ArrayList<Integer> set) {
