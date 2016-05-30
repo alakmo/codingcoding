@@ -1,7 +1,7 @@
 package Q5_03_Flip_Bit_to_Win;
 
 public class QuestionD {
-
+O(number of bit not n)
 	public static int flipBit(int a) {
 		/* If all 1s, this is already the longest sequence. */
 		if (~a == 0) return Integer.BYTES * 8;
