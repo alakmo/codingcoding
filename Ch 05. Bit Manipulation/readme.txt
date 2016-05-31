@@ -38,5 +38,4 @@
         can be derived from the length of the array and the width. Implement a function
         drawHorizontalLine(byte[] screen, int width, intxl, intx2, inty) which draws a horizontal
         line from (x 1, y) to (x2, y)       
-Write a program to swap odd and even bits in an integer with as few instructions as
-possible (e.g., bit 0 and bit! are swapped, bit 2 and bit 3 are swapped, and so on).
+
