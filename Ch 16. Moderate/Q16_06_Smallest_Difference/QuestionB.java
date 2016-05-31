@@ -3,17 +3,17 @@ import java.util.Arrays;
 
 public class QuestionB {
 	public static int findSmallestDifference(int[] array1, int[] array2) {
-		Arrays.sort(array1);
-		Arrays.sort(array2);
+		Arrays.sort(array1);// O(AlogA)
+		Arrays.sort(array2);//O(BlogB)
 		int a = 0;
 		int b = 0;
 		int difference = Integer.MAX_VALUE;
-		while (a < array1.length && b < array2.length) {
+		while (a < array1.length && b < array2.length) {   // O(A+B)
 			if (Math.abs(array1[a] - array2[b]) < difference) {
 				difference = Math.abs(array1[a] - array2[b]);
 				if (difference == 0) return difference;
 			}
-			if (array1[a] < array2[b]) {
+			if (array1[a] < array2[b]) {				//the total O(O(AlogA+BlogB)
 				a++;
 			} else {
 				b++;
