@@ -2,7 +2,7 @@ package Q16_10_Living_People;
 
 import java.util.Arrays;
 import java.util.Random;
-
+//HERE_O(PlogP)  p is the num of ppl
 public class QuestionC {
 	public static int maxAliveYear(Person[] people, int min, int max) {
 		int[] births = getSortedYears(people, true);
