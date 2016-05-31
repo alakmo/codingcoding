@@ -1,7 +1,7 @@
 package Q16_11_Diving_Board;
 
 import java.util.HashSet;
-
+// K is destinic 
 public class QuestionC {
 	public static int counter = 0;
 	
