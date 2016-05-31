@@ -9,26 +9,29 @@ then locate the range for left sub-tree and right sub-tree and do recursion
 */
 
 public TreeNode InPosTreeBuilder(int[] inorder, int[] postorder) {
-    if (inorder.length != postorder.length||inorder == null || postorder == null  )
-        return null;
-    HashMap<Integer, Integer> map = new HashMap<Integer,Integer>();
-    for (int i=0;i<inorder.length;++i)
-        map.put(inorder[i], i);
-    return InPosTreeBuilder(inorder, 0, inorder.length-1, postorder, 0, 
-                          postorder.length-1,map);
+	    if (inorder.length != postorder.length||inorder == null || postorder == null  )
+	        return null;
+	    HashMap<Integer, Integer> map = new HashMap<Integer,Integer>();
+	    for (int i=0;i<inorder.length;++i)
+	        map.put(inorder[i], i);
+	    return InPosTreeBuilder(inorder, 0, inorder.length-1, postorder, 0, 
+	                          postorder.length-1,map);
 }
 
 private TreeNode InPosTreeBuilder(int[] inorder, int inStr, int inEnd, int[] postorder, int preStr, int preEnd, 
                                  HashMap<Integer,Integer> map)
             {
-    if ( inStr>inEnd ||preStr>preEnd ) return null; //base case
-    TreeNode root = new TreeNode(postorder[preEnd]);
-    int rootIndex = map.get(postorder[preEnd]);
-    TreeNode leftchild = InPosTreeBuilder(inorder, inStr, rootIndex-1, postorder, preStr, preStr+rootIndex-inStr-1, map);
-    TreeNode rightchild = InPosTreeBuilder(inorder,rootIndex+1, inEnd, postorder, preStr+rootIndex-inStr, preEnd-1, map);
-    root.left = leftchild;
-    root.right = rightchild;
-    return root;
+		    if ( inStr>inEnd ||preStr>preEnd ) return null; //base case
+		    
+		    TreeNode root = new TreeNode(postorder[preEnd]);
+		    int rootIndex = map.get(postorder[preEnd]);
+		    
+		    TreeNode leftchild = InPosTreeBuilder(inorder, inStr, rootIndex-1, postorder, preStr, preStr+rootIndex-inStr-1, map);
+		    TreeNode rightchild = InPosTreeBuilder(inorder,rootIndex+1, inEnd, postorder, preStr+rootIndex-inStr, preEnd-1, map);
+		   
+		    root.left = leftchild;
+		    root.right = rightchild;
+		    return root;
 }
 
 
