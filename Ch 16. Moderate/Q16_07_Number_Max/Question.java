@@ -11,12 +11,12 @@ public class Question {
 		return flip((a >> 31) & 0x1);
 	}
 	
-	public static int getMaxNaive(int a, int b) {
+/**	public static int getMaxNaive(int a, int b) {
 		int k = sign(a - b);
-		int q = flip(k);
+		int q = flip(k);			//AHMAD altarnative BUT overflow when INT_MAXVALUE -3 and b is -10
 		return a * k + b * q;
 	}
-	
+**/	
 	public static int getMax(int a, int b) {
 		int c = a - b;
 		
