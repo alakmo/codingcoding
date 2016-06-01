@@ -2,7 +2,7 @@ package Q17_11_Word_Distance;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-
+//O(A+B) A the num of occuranceof the first word     B is the number of occurance of the second word
 import CtCILibrary.AssortedMethods;
 import CtCILibrary.HashMapList;
 
