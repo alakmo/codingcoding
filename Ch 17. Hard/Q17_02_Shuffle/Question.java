@@ -14,7 +14,7 @@ public class Question {
 			return cards;
 		}
 		
-		/* shuffle elements 0 through index - 1 */
+		/* shuffle elements 0 through index - 1 */             // way 1 AHMAD
 		shuffleArrayRecursively(cards, i - 1);
 		int k = rand(0, i);		
 		
@@ -26,9 +26,10 @@ public class Question {
 		/* Return shuffled array */
 		return cards;
  	}
-	
+
+
 	public static void shuffleArrayIteratively(int[] cards) { 
-		for (int i = 0; i < cards.length; i++) { 
+		for (int i = 0; i < cards.length; i++) { 			// // chose this  way 2 AHMAD
 			int k = rand(0, i);
 			int temp = cards[k];
 			cards[k] = cards[i];
@@ -36,6 +37,30 @@ public class Question {
 		} 
 	}
 	
+	
+	/**	int randomWithRange(int min, int max)
+			{						the general with range 
+			   int range = (max - min) + 1;     
+			   return (int)(Math.random() * range) + min;
+			}
+			
+					Output of randomWithRange(2, 5) 10 times:
+					
+					5
+					2
+					3
+					3
+					2
+					4
+					4
+					4
+					5
+					4
+								
+			
+			
+			**/
+			
 	public static void main(String[] args) {
 		int[] cards = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 		System.out.println(AssortedMethods.arrayToString(cards));
