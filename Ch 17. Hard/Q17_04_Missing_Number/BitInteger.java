@@ -58,4 +58,25 @@ public class BitInteger {
 		return number;
 	}
 }
-
+/**
+ * 1
+import java.math.BigInteger;
+2
+public class BigIntegerFactorial {
+3
+    public static void main(String[] args) {
+        calculateFactorial(50);
+    }
+    public static void calculateFactorial(int n) {
+        BigInteger result = BigInteger.ONE;
+        for (int i=1; i<=n; i++) {
+            result = result.multiply(BigInteger.valueOf(i));
+        }
+        System.out.println(n + "! = " + result);
+    }
+}
+The factorial output for an input value of 50 is,
+50! = 30414093201713378043612608166064768844377641568960512000000000000
+Posted i
+ * 
+ * **/
