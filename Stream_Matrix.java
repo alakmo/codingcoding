@@ -1,3 +1,29 @@
+ Scanner scanner = new Scanner(System.in);
+        String line;
+        String question = "";
+        line = scanner.nextLine();
+        if (line == null){
+            System.out.println("There was no question here. ");
+            System.exit(1);
+        } else if (line.isEmpty() || line.trim().equals("") || line.trim().equals("\n")) {
+            System.out.println("Skipped a blank line");
+        } else {
+            question = line;
+            System.out.println("Question="+question);
+        }
+
+
+        // Update: added this to confirm we have skipped a line
+
+        
+        while ((line = scanner.nextLine())!= null){
+            System.out.println("Line:"+line);
+        }
+		
+
+
+
+
 
 	public static void main(String[] args) throws FileNotFoundException {
 		
@@ -17,7 +43,7 @@
 		
 
 
-
+//HERE Ahmad 
 
 
 			 int c=0;
@@ -34,6 +60,9 @@
 			}  
 			//list = [44 1 2, 111, 010, 1050, 100]
 			
+			 
+		String numbers = list.get(0);
+		String[] numbersArray = numbers.split(" "); 
 			
 			
 			
